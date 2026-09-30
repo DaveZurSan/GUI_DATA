@@ -111,6 +111,7 @@ GUI_DATA/
 numpy
 matplotlib
 ```
+pip install -r requirements.txt
 
 ## Visualisations
 
