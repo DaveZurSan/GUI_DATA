@@ -33,16 +33,16 @@ The application supports two main workflows.
 
 ### 1. Generated Data
 
-The user can generate multiple realisations of either a Wiener process or a non-ergodic stochastic process. The application stores the realisations as NumPy arrays and computes statistical quantities from them.
+The user can generate multiple realisations of either a Wiener process or a non-ergodic stochastic process. The realisations are stored as NumPy arrays and used to calculate statistical quantities.
 
 For each dataset, the tool calculates:
 
 * Individual signal realisations
 * Ensemble average
-* Time average of a selected realisation
-* Probability density of the resulting signal values
+* Time average of the first realisation
+* Probability density of signal values
 
-These quantities are then displayed through three interactive plots.
+These quantities are displayed through three visualisations.
 
 ### 2. Uploaded Data
 
@@ -62,20 +62,20 @@ The first column represents the time vector, while each additional column repres
 
 ## Installation
 
-Clone the repository and install the required dependencies:
+Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/DaveZurSan/GUI_DATA.git
+cd GUI_DATA
 ```
 
-Install the required Python packages:
+Install the required dependencies:
 
 ```bash
 pip install numpy matplotlib
 ```
 
-Tkinter is included with most standard Python installations. On some Linux distributions it may need to be installed separately.
+Tkinter is included with most standard Python installations. On some Linux distributions, it may need to be installed separately.
 
 ## Running the Application
 
@@ -99,22 +99,20 @@ The graphical interface allows you to:
 ## Project Structure
 
 ```text
-.
+GUI_DATA/
 ├── signal_analysis.py
 ├── README.md
 └── requirements.txt
 ```
 
-A `requirements.txt` file can contain:
+### requirements.txt
 
 ```text
 numpy
 matplotlib
 ```
 
-## Example Outputs
-
-The application produces three main visualisations:
+## Visualisations
 
 ### Signal Realisations
 
@@ -141,3 +139,4 @@ The project demonstrates the use of Python for:
 * File-based data handling
 
 It provides a compact example of a complete workflow from raw numerical data to processed statistical information and visual outputs.
+
